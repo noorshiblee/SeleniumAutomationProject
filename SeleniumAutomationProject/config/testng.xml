@@ -1,0 +1,38 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="com.seleniumautomationproject" verbose="1" preserve-order="true">
+	
+	<listeners>
+		<listener class-name="com.seleniumautomationproject.util.CustomReporter" />
+	</listeners>
+	
+	<packages>
+		<package name="com.seleniumautomationproject.test" />
+	</packages>
+
+	
+	<test name="HomePageTest">
+		<classes>
+			<class name="com.seleniumautomationproject.test.HomePageTest">
+				<methods>
+					<include name="test_clickOnDhakaCity"/>		
+					<include name="test_clickOnChittagongCity"/>	
+				</methods>
+			</class>
+		</classes>
+	</test>
+	 
+	 
+	<!-- if you want to add more category, add like below: -->
+	<!-- <test name="yourcategoryname">
+		<classes>
+			<class name="com.seleniumautomationproject.test.yourcategoryname">
+				<methods>
+					<include name="test_testcaseName"/>
+					<include name="test_testcaseName" />					
+				</methods>
+			</class>
+		</classes>
+	</test> -->
+	 
+</suite>

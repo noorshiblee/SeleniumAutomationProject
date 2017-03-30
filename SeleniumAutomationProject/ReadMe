@@ -1,0 +1,26 @@
+Steps to start test:
+1. open the project in eclipse or any editor.
+2. go to seleniumautomationproject > config and open setting.conf file. Write which website you want to test in which browser.
+3. In seleniumautomationproject >src/main/java> com.seleniumautomationproject.test, add some of your test cases.
+4. go to seleniumautomationproject > src/main/java > com.seleniumautomationproject.main 
+5. right click on  Main.java and click on Run As > Java Application.
+
+
+Project Information:
+- All information is located inside src/main/java 
+- com.seleniumautomationproject.main consists the Main.java class to run the automation test.
+- com.seleniumautomationproject.test consists all the information related with test case or test suite. You can customize it according to your own.
+- com.seleniumautomationproject.locator consists the all element locator of web pages.
+- com.seleniumautomationproject.util contain all the helper function needed for the project.
+
+
+seleniumautomationproject > config folder:
+- In seleniumautomationproject > config > setting.conf file, input some basic data according to your purpose.
+- In testng.xml, input which test category and which test cases you want to run.
+
+ seleniumautomationproject > extentreort:
+ -after successfully completing your execution, an HTML report will be generated here followed by execution timestamp.
+ 
+ seleniumautomationproject > pom.xml consists all the necessary libraries for the project.
+ 
+ Debug the project for explore, customize the project as your will and enjoy automation testing.
